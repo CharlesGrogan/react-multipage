@@ -6,6 +6,8 @@ import { Contact } from "./Contact";
 import { NoMatch } from "./NoMatch";
 import { Layout } from "./component/Layout";
 import { Navigationbar } from "./component/Navigationbar";
+import { JumboHeader } from "./component/JumboHeader";
+
 
 import "./App.css";
 
@@ -13,6 +15,7 @@ function App() {
   return (
     <React.Fragment>
       <Navigationbar />
+      <JumboHeader />
       <Layout>
         <Router>
           <Switch>

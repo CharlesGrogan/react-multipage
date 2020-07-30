@@ -6,16 +6,7 @@ const Styles = styled.div`
   .navbar {
     background-color: #222;
   }
-  .navbar-light .navbar-brand {
-    color: antiquewhite;
-  }
-  .navbar-light .navbar-nav .nav-link {
-    color: white;
-}
-.navbar-light .navbar-toggler {
-  color: white;
-  border-color: rgba(0,0,0,.1);
-}
+  
   .navbar-brand, .navbar-nav .nav-link {
     color: #bbb
     &:hover {
@@ -26,7 +17,7 @@ const Styles = styled.div`
 
 export const Navigationbar = () => (
   <Styles>
-    <Navbar expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Navbar.Brand href="/">CloudHopper</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
