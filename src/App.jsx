@@ -9,7 +9,7 @@ import { Navigationbar } from "./component/Navigationbar";
 import { JumboHeader } from "./component/JumboHeader";
 
 
-import "./App.css";
+import "./Style.min.css";
 
 function App() {
   return (

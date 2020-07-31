@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Jumbotron, Button } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
 import styled from "styled-components";
 import backgroundImg from "../assets/onRock.jpg";
 
@@ -10,6 +10,7 @@ const Styles = styled.div`
     z-index: -2;
     background-position: center;
     background-size: cover;
+    margin: .5rem;
   }
   .screen {
     position: absolute;
@@ -25,14 +26,14 @@ const Styles = styled.div`
   h1, h2 {
     color: white;
     text-transform: capitalize;
-    
+    padding: 1rem 1rem 0 2rem;
   }
 
 `;
 
 export const JumboHeader = () => (
   <Styles>
-    <Jumbotron>
+    <Jumbotron fluid>
       <div className="screen"> </div>
         <h1>The CloudHopper</h1>
         <h2>bootstrap & react</h2>
